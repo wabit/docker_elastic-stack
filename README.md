@@ -8,7 +8,7 @@ https://www.elastic.co/guide/en/elastic-stack-get-started/master/get-started-doc
 * MacOS (sorry windows users)
 * Docker for Mac
 * Docker Engine is allotted at least 4GiB of memory (more if you can). In Docker Desktop, you configure resource usage on the Advanced tab in Preference.
-* Brew is installed (used incase you dont have gsed isntalled)
+* Brew is installed (used incase you dont have gsed installed)
 
 ### Install:
 
@@ -19,8 +19,13 @@ https://www.elastic.co/guide/en/elastic-stack-get-started/master/get-started-doc
 to just stop the current cluster without loosing data
 ```docker-compose -f elastic-docker-tls.yml down```
 
-to complete remove all container/config and volumes
+to completly remove all container/config and volumes
 ```docker-compose -f elastic-docker-tls.yml down -v```
 
 to start up the cluster once its been shutdown
 ```docker-compose -f elastic-docker-tls.yml up -d```
+
+
+## Comming Soon
+
+* Logstash, along with some example grok filters
